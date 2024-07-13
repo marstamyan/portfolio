@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#a6eff6">
+	<meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="description"
+		content="Custom-built Websites — Landing Pages, E-commerce, WordPress Sites with Custom Themes and Plugins">
+	<meta name="keywords" content="Landing Pages, WordPress, Custom Themes">
+	<meta name="author" content="Mamikon">
+	<title>Web Development</title>
+	<meta property="og:url" content="https://mamikonars.github.io/personal/" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Web Development">
+	<meta property="og:description"
+		content="Custom-built Websites — Landing Pages, E-commerce, WordPress Sites with Custom Themes and Plugins">
+	<meta property="og:image" content="https://mamikonars.github.io/personal/assets/img/og-image.jpg" />
+</head>
+
+<body>
+	<div class="loader">
+		<span class="loader-item">|</span>
+		<span class="loader-item" style="--delay: 0.0s">|</span>
+		<span class="loader-item" style="--delay: 0.1s">|</span>
+		<span class="loader-item" style="--delay: 0.2s">|</span>
+		<span class="loader-item" style="--delay: 0.3s">|</span>
+		<span class="loader-item" style="--delay: 0.4s">|</span>
+	</div>
+	<canvas id="canvas">
+	</canvas>
+	<header class="header" id="header">
+		<div class="container header-content">
+			<div class="about-user">
+				<img src="assets/img/logo.svg" alt="avatar" class="user-ava">
+				<div class="user-info">
+					<span class="user-name">Mamikon</span><br>
+					<span class="user-occupation">Website Development</span>
+				</div>
+			</div>
+			<div class="navigation">
+				<nav class="nav">
+					<a href="#portfolio" class="nav-link">Portfolio</a>
+					<a href="#reviews" class="nav-link">Testimonials</a>
+					<a href="#stages" class="nav-link">Project Stages</a>
+					<a href="#services" class="nav-link">Services</a>
+					<a href="#header" data-popup="popup-contacts" class="hire--btn">Contact</a>
+				</nav>
+			</div>
+			<div class="hamburger" id="burger"><span></span></div>
+		</div>
+	</header>
+	<section class="intro">
+		<div class="container intro-content">
+			<div class="intro-about">
+				<h1 class="intro__title">Web Development</h1>
+				<span class="intro__subtitle">Customized Solutions for Your Unique Needs</span>
+				<div class="intro__buttons">
+					<a href="https://telegram.im/@Arsama_mk" class="btn" target="_blank">Contact via Telegram</a>
+				</div>
+			</div>
+
+			<div class="intro__image-block">
+				<img src="assets/img/dev.png" alt="Portfolio" class="intro__image">
+			</div>
+		</div>
+	</section>
+
+	<div class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="filter" id="filter">Sort</div>
+			<div class="portfolio-filter">
+				<span class="portfolio-filter__link is-active" data-filter="all">All</span>
+				<span class="portfolio-filter__link" data-filter="lp">Landing</span>
+				<span class="portfolio-filter__link" data-filter="wp">WordPress</span>
+				<span class="portfolio-filter__link" data-filter="wp-shop">Online Shops</span>
+				<span class="portfolio-filter__link" data-filter="htmltowp">Figma &rarr; WordPress</span>
+				<span class="portfolio-filter__link" data-filter="plugins">Plugins</span>
+			</div>
+			<div class="portfolio-content">
+				<div class="portfolio-content__item" data-category="lp">
+					<a href="https://mamikonars.github.io/activebox/" target="_blank"><img
+							src="assets/img/activebox.jpg" class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Activebox</span>
+							<span class="info-tooltip" data-tooltip="Landing Page HTML/CSS/JS">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="htmltowp">
+					<a href="http://woodtech.marstasi.beget.tech/" target="_blank"><img src="assets/img/woodtech.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Woodtech</span>
+							<span class="info-tooltip"
+								data-tooltip="Developing a Custom WordPress Theme from a Figma Design">i</span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="portfolio-content__item" data-category="htmltowp">
+					<a href="http://gb.marstasi.beget.tech/" target="_blank"><img src="assets/img/blog.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">GBlog</span>
+							<span class="info-tooltip"
+								data-tooltip="Creating a WordPress Theme (News Blog) from Scratch Based on a Figma Design">i</span>
+						</div>
+					</div>
+				</div> -->
+				<div class="portfolio-content__item" data-category="htmltowp">
+					<a href="http://sport.marstasi.beget.tech/" target="_blank"><img src="assets/img/sportland.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">SportLand</span>
+							<span class="info-tooltip"
+								data-tooltip="Developing a Custom WordPress Theme for a Sports Club from a Figma Design">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="lp">
+					<a href="https://mamikonars.github.io/discover/" target="_blank"><img src="assets/img/discover.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Discover</span>
+							<span class="info-tooltip" data-tooltip="Landing Page HTML/CSS/JS">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="lp">
+					<a href="http://pizza.marstasi.beget.tech/" target="_blank"><img src="assets/img/pizza.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">PizzaTime</span>
+							<span class="info-tooltip" data-tooltip="Pizza Delivery Website (HTML/CSS/JS)">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="htmltowp">
+					<a href="http://applayers.marstasi.beget.tech/" target="_blank"><img src="assets/img/applayers.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Applayers</span>
+							<span class="info-tooltip "
+								data-tooltip="Integrating HTML/CSS/JS into WordPress with Custom Template Development">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="htmltowp">
+					<a href="http://sparow.marstasi.beget.tech/" target="_blank"><img src="assets/img/sparow.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Sparow</span>
+							<span class="info-tooltip"
+								data-tooltip="Integrating HTML/CSS/JS into WordPress with Custom Template Development">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="wp-shop">
+					<a href="http://burgers.marstasi.beget.tech/" target="_blank"><img src="assets/img/burgers.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Burgers shop</span>
+							<span class="info-tooltip"
+								data-tooltip="Integrating HTML/CSS/JS into WordPress with Custom Template Development">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="htmltowp">
+					<a href="http://dental.marstasi.beget.tech/" target="_blank"><img src="assets/img/dental.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Dental clinic</span>
+							<span class="info-tooltip" data-tooltip="Custom WP template for dental clinic">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="wp-shop">
+					<a href="http://printodelo.marstasi.beget.tech/" target="_blank"><img
+							src="assets/img/printodelo.jpg" class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Printodelo shop</span>
+							<span class="info-tooltip" data-tooltip="Online T-shirt store">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="plugins">
+					<a href="https://github.com/marstamyan/mk-simple-scroll-progress/" target="_blank"><img
+							src="assets/img/wp-scroll-indicator.jpg" class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Scroll Progress</span>
+							<span class="info-tooltip"
+								data-tooltip=" Scroll Progress is a simple WordPress plugin that adds a scroll progress indicator">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item" data-category="plugins">
+					<a href="https://github.com/marstamyan/simple-customizable-faq-accordion" target="_blank"><img
+							src="assets/img/faq-plugin.jpg" class="portfolio-content__img"
+							alt="WordPress integration"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">WP FAQ Plugin</span>
+							<span class="info-tooltip"
+								data-tooltip="WordPress plugin that allows you to easily create customizable accordions for FAQs">i</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="load-more" id="load-more">Show more</div>
+			<div class="hidden-block">
+				<div class="portfolio-content__item portfolio-hidden" data-category="lp">
+					<a href="https://mamikonars.github.io/odigo/" target="_blank"><img src="assets/img/odagio.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Odagio</span>
+							<span class="info-tooltip" data-tooltip="Responsive Landing Page HTML/CSS/JS">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="lp">
+					<a href="https://mamikonars.github.io/golden-egg/" target="_blank"><img src="assets/img/g-egg.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Golden Egg</span>
+							<span class="info-tooltip" data-tooltip="Landing Page HTML/CSS/JS">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="wp-shop">
+					<a href="http://kursain.marstasi.beget.tech" target="_blank"><img src="assets/img/furniture.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Furniture</span>
+							<span class="info-tooltip" data-tooltip="Online Furniture Store">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="wp">
+					<a href="https://my-gamezone.ru/" target="_blank"><img src="assets/img/my-gamezone.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">MyGameZone</span>
+							<span class="info-tooltip" data-tooltip="Gaming Website">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="lp">
+					<a href="https://mamikonars.github.io/mogo/" target="_blank"><img src="assets/img/mogo.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Mogo</span>
+							<span class="info-tooltip" data-tooltip="Responsive Landing Page HTML/CSS/JS">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="wp">
+					<a href="http://dasavar.marstasi.beget.tech/" target="_blank"><img src="assets/img/dasavar.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Online Course</span>
+							<span class="info-tooltip"
+								data-tooltip="Distance Learning Website with Online Courses and Tests">i</span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="portfolio-content__item portfolio-hidden" data-category="lp">
+					<a href="https://mamikonars.github.io/web/" target="_blank"><img src="assets/img/web.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Web</span>
+							<span class="info-tooltip" data-tooltip="Landing Page HTML/CSS/JS">i</span>
+						</div>
+					</div>
+				</div> -->
+				<div class="portfolio-content__item portfolio-hidden" data-category="htmltowp">
+					<a href="http://blurex.marstasi.beget.tech/" target="_blank"><img src="assets/img/blurex.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Blurex</span>
+							<span class="info-tooltip"
+								data-tooltip="PSD to WordPress Conversion with Custom Template Creation">i</span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="portfolio-content__item portfolio-hidden" data-category="wp-shop">
+					<a href="http://neo.marstasi.beget.tech/" target="_blank"><img src="assets/img/neo.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Neo</span>
+							<span class="info-tooltip" data-tooltip="Laptop Store">i</span>
+						</div>
+					</div>
+				</div> -->
+				<div class="portfolio-content__item portfolio-hidden" data-category="wp">
+					<a href="http://photo.marstasi.beget.tech" target="_blank"><img src="assets/img/photo.jpg"
+							class="portfolio-content__img" alt="Photographer's Website"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Photo</span>
+							<span class="info-tooltip" data-tooltip="Photographer's Website">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="htmltowp">
+					<a href="http://expo.marstasi.beget.tech/" target="_blank"><img src="assets/img/expo.jpg"
+							class="portfolio-content__img" alt="Portfolio"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Artsakh Career Expo</span>
+							<span class="info-tooltip" data-tooltip="Artsakh Career Expo Vol. 2">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="htmltowp">
+					<a href="http://greeno.marstasi.beget.tech/" target="_blank"><img src="assets/img/greeno.jpg"
+							class="portfolio-content__img" alt="WordPress integration"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Greeno</span>
+							<span class="info-tooltip"
+								data-tooltip="Integrating HTML/CSS/JS/PHP into WordPress with Custom Template Creation">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="htmltowp">
+					<a href="http://muna.marstasi.beget.tech/" target="_blank"><img src="assets/img/muna.jpg"
+							class="portfolio-content__img" alt="WordPress integration"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Muna</span>
+							<span class="info-tooltip"
+								data-tooltip="Integrating Frontend into WordPress with Custom Template Development">i</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-content__item portfolio-hidden" data-category="htmltowp">
+					<a href="http://gym.marstasi.beget.tech/" target="_blank"><img src="assets/img/gym.jpg"
+							class="portfolio-content__img" alt="WordPress integration"></a>
+					<div class="portfolio-content__info">
+						<div class="content-tags">
+							<span class="portfolio-content__title">Gym</span>
+							<span class="info-tooltip"
+								data-tooltip="Integrating Frontend into WordPress with Custom Template Development">i</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<h2 class="reviews-title">Testimonials</h2>
+			<div class="review-block">
+				<div class="review-item">
+					<div class="review-text">
+						We ordered the integration of a WordPress theme. The developer takes a responsible and dedicated
+						approach to tasks. Everything is done with quality and in a timely manner..
+					</div>
+
+					<div class="review-autor">
+						<div class="review-autor__img-block">
+							<a href="https://kwork.ru/user/arsaman#reviews" target="_blank" title="review-link"><img
+									src="assets/img/review-3.jpg" alt="review-avatar" class="review-autor__img"></a>
+						</div>
+						<span class="review-autor__name">Ivan mail4bashar</span>
+					</div>
+				</div>
+				<div class="review-item">
+					<div class="review-text">
+						The developer quickly and efficiently completed the task of creating a 3-page website. Always
+						stayed in touch and was attentive to all requests. I'm happy with the result and will recommend
+						the developer to everyone in the future :)
+					</div>
+
+					<div class="review-autor">
+						<div class="review-autor__img-block">
+							<a href="https://kwork.ru/user/arsaman#reviews" target="_blank" title="review-link"><img
+									src="assets/img/maria-avatar.jpg" alt="review-avatar" class="review-autor__img"></a>
+						</div>
+						<span class="review-autor__name">Maria mutabor_m</span>
+					</div>
+				</div>
+				<div class="review-item">
+					<div class="review-text">
+						The project was completed on time. The developer promptly responds and quickly addresses
+						comments. Offers several solution options if something is missing in the specifications. I am
+						satisfied with the result.
+					</div>
+
+					<div class="review-autor">
+						<div class="review-autor__img-block">
+							<a href="https://kwork.ru/user/arsaman#reviews" target="_blank" title="review-link"><img
+									src="assets/img/kirill-avatar.jpg" alt="review-avatar"
+									class="review-autor__img"></a>
+						</div>
+						<span class="review-autor__name">kirill Sh495</span>
+					</div>
+				</div>
+				<div class="review-item active">
+					<div class="review-text">
+						The task was to create a website from a Figma design using HTML and CSS. The work was done
+						quickly and with good quality; I am completely satisfied with the result. Additionally, I
+						received a consultation on the topic. Communication was excellent throughout the project.
+					</div>
+
+					<div class="review-autor">
+						<div class="review-autor__img-block">
+							<a href="https://kwork.ru/user/arsaman#reviews" target="_blank" title="review-link"><img
+									src="assets/img/wbw-avatar.jpg" alt="review-avatar" class="review-autor__img"></a>
+						</div>
+						<span class="review-autor__name">Maria WBW</span>
+					</div>
+				</div>
+				<div class="left-arrow prev" id="left-arrow"></div>
+				<div class="right-arrow next" id="right-arrow"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="advantages">
+		<div class="container advantages-container" id="stages">
+			<h2 class="advantages-title">The stages we work through:</h2>
+			<div class="advantages-block">
+				<div class="advantages-item">
+					<img src="assets/img/icons/icon-1.svg" alt="advantages" class="advantages-img">
+					<div class="advantages-desc">
+						Pre-project stage with technical specification approval. Discussion of website functionality,
+						design, and task setting that needs to be implemented.
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="assets/img/icons/icon-2.svg" alt="advantages" class="advantages-img">
+					<div class="advantages-desc">
+						The process of creating a website using modern technologies. Testing the website and checking
+						the code for validity. Approval of the completed work with the client.
+					</div>
+				</div>
+				<div class="advantages-item">
+					<img src="assets/img/icons/icon-3.svg" alt="advantages" class="advantages-img">
+					<div class="advantages-desc">
+						If desired, we offer ongoing support, maintenance, design updates, and promotion of the website,
+						both in search engines and on social media.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="carousel">
+			<ul class="carousel-content">
+				<li><img src="assets/img/icons/html5.svg" alt="html5"></li>
+				<li><img src="assets/img/icons/javascript.svg" alt="javascript"></li>
+				<li><img src="assets/img/icons/php.svg" alt="php"></li>
+				<li><img src="assets/img/icons/mysql.svg" alt="php"></li>
+				<li><img src="assets/img/icons/bootstrap.svg" alt="bootstrap"></li>
+				<li><img src="assets/img/icons/wordpress.svg" alt="wordpress"></li>
+				<li><img src="assets/img/icons/woocommerce.svg" alt="woocommerce"></li>
+			</ul>
+		</div>
+
+		<div class="services">
+			<h3 class="services-header" id="services">Our Services</h3>
+			<div class="container services-block">
+				<div class="services-item">
+					<img src="assets/img/service/site.svg" alt="Landing Page" class="services-img">
+					<h3 class="services-title">Landing Page Creation</h3>
+				</div>
+				<div class="services-item">
+					<img src="assets/img/service/mobile.svg" alt="Mobile Responsive Design" class="services-img">
+					<h3 class="services-title">Mobile Responsive Design</h3>
+				</div>
+				<div class="services-item">
+					<img src="assets/img/service/wordpress.svg" alt="Custom WordPress Themes" class="services-img">
+					<h3 class="services-title">Custom WordPress Themes</h3>
+				</div>
+				<div class="services-item">
+					<img src="assets/img/service/pages.svg" alt="Shops" class="services-img">
+					<h3 class="services-title">Custom WordPress Plugins</h3>
+				</div>
+				<div class="services-item">
+					<img src="assets/img/service/redesign.svg" alt="Website Redesign" class="services-img">
+					<h3 class="services-title">Website Redesign</h3>
+				</div>
+				<div class="services-item">
+					<img src="assets/img/service/seo.svg" alt="services" class="services-img">
+					<h3 class="services-title">SEO Optimization</h3>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<footer class="footer">
+		<div class="container footer-block">
+			<span class="copy">&copy; 2024 | <a href="https://am.linkedin.com/in/mamikon-arustamyan-3969301ab"
+					target="_blank" class="footer-link">Mamikon</a></span>
+
+			<div class="footer-social">
+				<ul class="footer-social__list">
+					<li class="footer-social__item">
+						<a href="https://www.linkedin.com/in/mamikon-arustamyan-3969301ab/"
+							class="footer-social__link ln-icon" target="_blank">
+							<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
+								class="svg-social" role="img" xmlns="http://www.w3.org/2000/svg"
+								viewBox="-75 0 576 512">
+								<path fill="currentColor"
+									d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+								</path>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a href="mailto:mamikonars@gmail.com" class="footer-social__link gmail_icon">
+							<svg class="svg-social" role="img" id="Layer_1" data-name="Layer 1"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<title>Message</title>
+								<path fill="currentColor"
+									d="M426.667,64H85.333a64.073,64.073,0,0,0-64,64V384a64.073,64.073,0,0,0,64,64H426.667a64.073,64.073,0,0,0,64-64V128A64.073,64.073,0,0,0,426.667,64ZM85.333,106.667H426.667a21.358,21.358,0,0,1,19.739,13.267L284.543,265.61a42.581,42.581,0,0,1-57.085,0L65.595,119.934A21.358,21.358,0,0,1,85.333,106.667ZM426.667,405.333H85.333A21.357,21.357,0,0,1,64,384V175.9L198.916,297.325a85.155,85.155,0,0,0,114.169,0L448,175.9V384A21.357,21.357,0,0,1,426.667,405.333Z" />
+							</svg>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a href="https://telegram.im/@Arsama_mk" class="footer-social__link tm-icon" target="_blank">
+							<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane"
+								class="svg-social" role="img" xmlns="http://www.w3.org/2000/svg"
+								viewBox="-60 0 576 512">
+								<path fill="currentColor"
+									d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+								</path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<span class="icons">Icons from
+				<a href="https://freeicons.io/profile/3" target="_blank" class="footer-link">freeicons.io</a>
+			</span>
+		</div>
+		<div class="to-top"></div>
+	</footer>
+	<div class="popup popup-contacts">
+		<div class="popup__wrapper">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="close-btn popup__close-btn popup__close" type="button"></button>
+					<div class="services-header">For contact</div>
+					<form action="https://formspree.io/f/xblrlojj" method="POST" class="form">
+						<input class="form__input" type="text" name="name" placeholder="* Name" maxlength="30" required>
+						<input class="form__input" type="email" name="email" placeholder="* Email" maxlength="40"
+							required>
+						<input type="hidden" name="_language" value="en" />
+
+						<input class="form__input" type="tel" name="Tel:" placeholder="Phone">
+						<textarea name="textarea" id="textarea" placeholder="Your message..." required></textarea>
+						<button class="btn formbtn" type="submit" id="submit">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-send">
+		<div class="popup__wrapper">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="close-btn popup__close-btn popup__close" type="button"></button>
+					<div class="section__title">Successfully sent</div>
+					<p class="popup-order__desc">Message sent</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/canvas.js"></script>
+</body>
+
+</html>
