@@ -366,6 +366,12 @@ h6 {
   width: 300px;
 }
 
+.intro-animation {
+  width: 350px;
+  height: 350px;
+  border: none;
+}
+
 /* hamburger menu */
 
 .hamburger {
@@ -1907,6 +1913,10 @@ h6 {
     -ms-flex-align: start;
     align-items: flex-start;
   }
+
+  .intro {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -1930,7 +1940,7 @@ h6 {
 
   .btn {
     padding: 9px 31px;
-    margin-bottom: 6%;
+    margin-bottom: 3%;
   }
 
   .portfolio-content__item {
@@ -1972,11 +1982,13 @@ h6 {
 @media screen and (max-width: 420px) {
   .intro__title {
     font-size: 26px;
+    margin-bottom: 10px;
   }
 
   .intro__subtitle {
     width: 98%;
-  }
+    margin-bottom: 20px;
+  }пше
 
   .intro__image {
     width: 75%;
