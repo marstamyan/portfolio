@@ -365,4 +365,14 @@
 	};
 	//tooltip    />>>>>>>>>>>>>>>>>>>>>>*/
 
+
+	//GA 4 event registration   >>>>>>>>>>>>>>>>>>>>>>*/
+	document.querySelector('.hire--btn').addEventListener('click', function() {
+		gtag('event', 'click_contact_button', {
+			'link_url': '#header',
+			'event_category': 'Contact Button',
+			'event_label': 'Popup Contact'
+		});
+	});
+	//GA 4 event registration   />>>>>>>>>>>>>>>>>>>>>>*/
 })()
